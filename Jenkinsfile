@@ -2,8 +2,10 @@ pipeline {
     agent { dockerfile true }
     stages {
         stage('Stage on node') {
-				echo 'Running stage in node docker.'
-			 	sh 'node --version'
+			steps {
+                echo 'Running stage in node docker.'
+                sh 'node --version'
+            }
 		}
     }
     post {
