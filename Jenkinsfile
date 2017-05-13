@@ -4,7 +4,6 @@ pipeline {
         stage('Stage on node') {
 				echo 'Running stage in node docker.'
 			 	sh 'node --version'
-			}
 		}
     }
     post {
